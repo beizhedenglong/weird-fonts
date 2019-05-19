@@ -65,3 +65,4 @@ output.ts
 exampleDist
 .cache
 dist
+.DS_Store

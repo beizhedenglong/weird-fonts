@@ -12,6 +12,8 @@
     "test": "jest --coverage",
     "readme": "ts-node ./script/generateReademe.ts",
     "build": "microbundle",
+    "build:example": "parcel build example/index.html --out-dir exampleDist",
+    "deploy": "yarn build:example & node ./script/deploy.js",
     "dev": "microbundle watch"
   },
   "repository": "https://github.com/beizhedenglong/wired-fonts.git",
@@ -23,6 +25,7 @@
     "@types/node": "^12.0.2",
     "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
+    "gh-pages": "^2.0.1",
     "jest": "^24.8.0",
     "microbundle": "^0.11.0",
     "parcel-bundler": "^1.12.3",

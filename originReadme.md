@@ -1,6 +1,13 @@
 # Wired Fonts
 A JavaScript package that turn alphanumeric characters into weird fonts.
 
+## Screenshot
+
+![demo](./images/demo.png) <!-- weird-disable-line -->
+
+You can play with this [demo](https://beizhedenglong.github.io/wired-fonts). <!-- weird-disable-line -->
+
+
 ## Installation
 `npm install wired-fonts --save`  <!-- weird-disable-line -->
 
