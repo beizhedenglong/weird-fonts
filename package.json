@@ -12,6 +12,7 @@
     "test": "jest --coverage",
     "readme": "ts-node ./script/generateReademe.ts",
     "build": "microbundle",
+    "publish": "yarn build & npm run publish",
     "build:example": "parcel build example/index.html --out-dir exampleDist",
     "deploy": "yarn build:example & node ./script/deploy.js",
     "dev": "microbundle watch"
