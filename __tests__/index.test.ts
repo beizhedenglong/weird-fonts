@@ -1,4 +1,7 @@
-import { serif, sansSerif, script, fraktur, monoSpace, doubleStruck } from "../src"
+import {
+  serif, sansSerif, script, fraktur,
+  monoSpace, doubleStruck, circle
+} from "../src"
 
 const unTouchStr = "我爱你"
 const origin = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" + unTouchStr
@@ -26,4 +29,8 @@ test("monoSpace", () => {
 
 test("doubleStruck", () => {
   expect(doubleStruck(origin)).toEqual("𝔸𝔹ℂ𝔻𝔼𝔽𝔾ℍ𝕀𝕁𝕂𝕃𝕄ℕ𝕆ℙℚℝ𝕊𝕋𝕌𝕍𝕎𝕏𝕐ℤ𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡我爱你")
+})
+
+test("circle", () => {
+  expect(circle(origin)).toEqual("ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ⓪①②③④⑤⑥⑦⑧⑨我爱你")
 })

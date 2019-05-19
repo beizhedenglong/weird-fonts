@@ -55,3 +55,7 @@ export const monoSpace = (
 export const doubleStruck = (
   s = ""
 ) => lookUp("double-struck.bold", s)
+
+export const circle = (
+  s = ""
+) => lookUp("circle", s)
