@@ -1,12 +1,18 @@
 {
   "name": "wired-fonts",
   "version": "0.1.0",
-  "description": "A JavaScript package that turn alphanumeric characters into mathematical alphanumeric symbols.",
-  "main": "index.js",
+  "description": "A JavaScript package that turn alphanumeric characters into weird fonts.",
+  "main": "dist/index.js",
   "source": "src/index.ts",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "types": "dist/src/index.d.ts",
   "scripts": {
+    "example": "parcel example/index.html --out-dir exampleDist",
     "test": "jest --coverage",
-    "readme": "ts-node ./script/generateReademe.ts"
+    "readme": "ts-node ./script/generateReademe.ts",
+    "build": "microbundle",
+    "dev": "microbundle watch"
   },
   "repository": "https://github.com/beizhedenglong/wired-fonts.git",
   "author": "Victor Wang <wang_shaojie@icloud.com>",
@@ -15,8 +21,13 @@
   "devDependencies": {
     "@types/jest": "^24.0.13",
     "@types/node": "^12.0.2",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
     "jest": "^24.8.0",
     "microbundle": "^0.11.0",
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.1.0",
     "typescript": "^3.4.5"
