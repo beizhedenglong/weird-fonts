@@ -9,7 +9,7 @@
   "types": "dist/src/index.d.ts",
   "scripts": {
     "example": "parcel example/index.html --out-dir exampleDist",
-    "test": "jest --coverage",
+    "test": "jest --coverage --verbose ./__tests__",
     "readme": "ts-node ./script/generateReademe.ts",
     "build": "microbundle",
     "release": "yarn build & npm run publish",
