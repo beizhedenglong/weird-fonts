@@ -1,0 +1,15 @@
+{
+  "name": "wired-fonts",
+  "version": "0.1.0",
+  "description": "A JavaScript package that turn alphanumeric characters into mathematical alphanumeric symbols.",
+  "main": "index.js",
+  "source": "src/index.ts",
+  "repository": "https://github.com/beizhedenglong/wired-fonts.git",
+  "author": "Victor Wang <wang_shaojie@icloud.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/node": "^12.0.2",
+    "microbundle": "^0.11.0"
+  }
+}
