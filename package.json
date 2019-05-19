@@ -1,7 +1,7 @@
 {
   "name": "wired-fonts",
   "version": "0.1.0",
-  "description": "A JavaScript package that turn alphanumeric characters into weird fonts.",
+  "description": "A JavaScript package that turn alphanumeric characters into weird font style.",
   "main": "dist/index.js",
   "source": "src/index.ts",
   "umd:main": "dist/index.umd.js",
@@ -12,7 +12,7 @@
     "test": "jest --coverage",
     "readme": "ts-node ./script/generateReademe.ts",
     "build": "microbundle",
-    "reslish": "yarn build & npm run publish",
+    "release": "yarn build & npm run publish",
     "build:example": "parcel build example/index.html --out-dir exampleDist",
     "deploy": "yarn build:example & node ./script/deploy.js",
     "dev": "microbundle watch"

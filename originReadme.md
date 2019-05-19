@@ -1,5 +1,5 @@
 # Wired Fonts
-A JavaScript package that turn alphanumeric characters into weird fonts.
+A JavaScript package that turn alphanumeric characters into weird font style.
 
 ## Screenshot
 
