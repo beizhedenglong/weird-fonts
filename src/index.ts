@@ -1,52 +1,52 @@
 import { lookUp } from "./utils"
 
-type fontWeight = "normal" | "bold" | "italic" | "bold-italic"
+type fontStyle = "normal" | "bold" | "italic" | "bold-italic"
 
-const fontWeightMap = {
+const fontStyleMap = {
   "normal": true,
   "bold": true,
   "italic": true,
   "bold-italic": true
 }
 
-const fontWeightHelper = (
+const fontStyleHelper = (
   s = "",
   prefix = "serif",
-  options: { fontWeight: fontWeight } = { fontWeight: "normal" }
+  options: { fontStyle: fontStyle } = { fontStyle: "normal" }
 ) => {
-  const suffix = fontWeightMap[options.fontWeight] ? options.fontWeight : "normal"
+  const suffix = fontStyleMap[options.fontStyle] ? options.fontStyle : "normal"
   const fontName = `${prefix}.${suffix}`
   return lookUp(fontName, s)
 }
 
 export const serif = (
   s?: string,
-  options?: { fontWeight: fontWeight }
-) => fontWeightHelper(s, "serif", options)
+  options?: { fontStyle: fontStyle }
+) => fontStyleHelper(s, "serif", options)
 
 export const sansSerif = (
   s?: string,
-  options?: { fontWeight: fontWeight }
-) => fontWeightHelper(s, "sans-serif", options)
+  options?: { fontStyle: fontStyle }
+) => fontStyleHelper(s, "sans-serif", options)
 
 const scriptHelper = (
   s = "",
   prefix = "script",
-  options: { fontWeight: "normal" | "bold" } = { fontWeight: "normal" }
+  options: { fontStyle: "normal" | "bold" } = { fontStyle: "normal" }
 ) => {
-  const suffix = options.fontWeight === "bold" ? "bold" : "normal"
+  const suffix = options.fontStyle === "bold" ? "bold" : "normal"
   return lookUp(`${prefix}.${suffix}`, s)
 }
 
 export const script = (
   s = "",
-  options: { fontWeight: "normal" | "bold" } = { fontWeight: "normal" }
+  options: { fontStyle: "normal" | "bold" } = { fontStyle: "normal" }
 ) => scriptHelper(s, "script", options)
 
 export const fraktur = (
   s = "",
-  options: { fontWeight: "normal" | "bold" } = { fontWeight: "normal" }
-) => scriptHelper(s, "script", options)
+  options: { fontStyle: "normal" | "bold" } = { fontStyle: "normal" }
+) => scriptHelper(s, "fraktur", options)
 
 export const monoSpace = (
   s = "",

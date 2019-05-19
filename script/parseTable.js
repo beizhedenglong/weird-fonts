@@ -121,12 +121,12 @@ const numberMap = toMap(numberTable, numberNames)
 
 Object.keys(alphabetMap)
   .forEach(name => {
-    if(numberMap[name]) {
+    if (numberMap[name]) {
       alphabetMap[name].push(...numberMap[name])
     }
   })
 
-  fs.writeFileSync(
-    path.join(__dirname, "data.json"),
-    JSON.stringify(alphabetMap)
-  )
+fs.writeFileSync(
+  path.join(__dirname, "data.json"),
+  JSON.stringify(alphabetMap)
+)
