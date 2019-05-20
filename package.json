@@ -1,5 +1,5 @@
 {
-  "name": "wired-fonts",
+  "name": "weird-fonts",
   "version": "0.1.0",
   "description": "A JavaScript package that turn alphanumeric characters into weird font style.",
   "main": "dist/index.js",
@@ -16,7 +16,7 @@
     "deploy": "yarn build:example & node ./script/deploy.js",
     "dev": "microbundle watch"
   },
-  "repository": "https://github.com/beizhedenglong/wired-fonts.git",
+  "repository": "https://github.com/beizhedenglong/weird-fonts.git",
   "author": "Victor Wang <wang_shaojie@icloud.com>",
   "license": "MIT",
   "private": false,

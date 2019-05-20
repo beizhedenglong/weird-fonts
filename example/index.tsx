@@ -13,7 +13,7 @@ const Demo = () => {
       padding: 20,
     }}
   >
-    <h1>Wired Fonts Demo</h1>
+    <h1>Weird Fonts Demo</h1>
     <input
       type="text"
       placeholder="Type here..."
