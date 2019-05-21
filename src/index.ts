@@ -59,3 +59,7 @@ export const doubleStruck = (
 export const circle = (
   s = ""
 ) => lookUp("circle", s)
+
+export const square = (
+  s = ""
+) => lookUp("square", s)
