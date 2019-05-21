@@ -1,6 +1,6 @@
 import {
   serif, sansSerif, script, fraktur,
-  monoSpace, doubleStruck, circle
+  monoSpace, doubleStruck, circle, small
 } from "../src"
 
 const unTouchStr = "我爱你"
@@ -33,4 +33,8 @@ test("doubleStruck", () => {
 
 test("circle", () => {
   expect(circle(origin)).toEqual("ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ⓪①②③④⑤⑥⑦⑧⑨我爱你")
+})
+
+test("small", () => {
+  expect(small(origin)).toEqual("🇦🇧🇨🇩🇪🇫🇬🇭🇮🇯🇰🇱🇲🇳🇴🇵🇶🇷🇸🇹🇺🇻🇼🇽🇾🇿🇦🇧🇨🇩🇪🇫🇬🇭🇮🇯🇰🇱🇲🇳🇴🇵🇶🇷🇸🇹🇺🇻🇼🇽🇾🇿0123456789我爱你")  // god
 })
