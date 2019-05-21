@@ -13,7 +13,7 @@
     "readme": "ts-node ./script/generateReademe.ts",
     "build": "microbundle",
     "build:example": "parcel build example/index.html --out-dir exampleDist --public-url ./",
-    "deploy": "yarn build:example & node ./script/deploy.js",
+    "deploy": "rm -rf ./exampleDist && yarn build:example && node ./script/deploy.js",
     "dev": "microbundle watch"
   },
   "repository": "https://github.com/beizhedenglong/weird-fonts.git",
