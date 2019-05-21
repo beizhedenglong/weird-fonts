@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 import {
   serif, sansSerif,
   circle, monoSpace, doubleStruck,
-  script, fraktur, small,
+  script, fraktur, square,
 } from "../src"
 
 const Demo = () => {
@@ -26,7 +26,7 @@ const Demo = () => {
       onChange={e => setValue(e.target.value)}
     />
     <ul style={{ fontSize: 20 }}>
-      <li>small: {small(value)}</li>
+      <li>square: {square(value)}</li>
       <li>serif italic: {serif(value, { fontStyle: "italic" })}</li>
       <li>serif bold: {serif(value, { fontStyle: "bold" })}</li>
       <li>serif bold-italic: {serif(value, { fontStyle: "bold-italic" })}</li>

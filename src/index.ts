@@ -60,6 +60,6 @@ export const circle = (
   s = ""
 ) => lookUp("circle", s)
 
-export const small = (
+export const square = (
   s = ""
-) => lookUp("small", s)
+) => lookUp("square", s)
