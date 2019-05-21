@@ -1,6 +1,6 @@
 {
   "name": "weird-fonts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A JavaScript package that turn alphanumeric characters into weird font style.",
   "main": "dist/index.js",
   "source": "src/index.ts",
