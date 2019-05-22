@@ -8,7 +8,7 @@
   "module": "dist/index.mjs",
   "types": "dist/src/index.d.ts",
   "scripts": {
-    "example": "parcel example/index.html --out-dir exampleDist",
+    "example": "parcel example/index.html --out-dir exampleDist --open",
     "test": "jest --coverage --verbose ./__tests__",
     "readme": "ts-node ./script/generateReademe.ts",
     "build": "microbundle",

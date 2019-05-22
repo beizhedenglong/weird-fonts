@@ -1,6 +1,6 @@
 import * as fs from "fs"
 import * as path from "path"
-import { serif } from "../src"
+import { fraktur } from "../src"
 
 
 const originReademe = fs.readFileSync(
@@ -15,7 +15,7 @@ const output = originReademe
     if (escapePattern.test(line)) {
       return line.replace(escapePattern, "")
     }
-    return serif(line, { fontStyle: "bold-italic" })
+    return fraktur(line, { fontStyle: "bold" })
   })
   .join("\n")
 
