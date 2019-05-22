@@ -6,14 +6,6 @@ import {
   script, fraktur, square,
 } from "../src"
 
-const inputStyle = {
-  padding: '0 20px',
-  boxShadow: '0px 1px 8px #20212447',
-  borderRadius: '8px',
-  outline: 'none',
-  border: 'none',
-}
-
 const Demo = () => {
   const [value, setValue] = React.useState("I love you three thousand.")
   return <div
@@ -34,7 +26,11 @@ const Demo = () => {
         width: 500,
         height: 50,
         fontSize: 16,
-        ...inputStyle
+        padding: '0 20px',
+        boxShadow: '0px 1px 8px #20212447',
+        borderRadius: '8px',
+        outline: 'none',
+        border: 'none',
       }}
       value={value}
       onChange={e => setValue(e.target.value)}
