@@ -39,8 +39,7 @@ const Demo = () => {
       value={value}
       onChange={e => setValue(e.target.value)}
     />
-    <ul style={{ fontSize: 20, textAlign: 'left' }}>
-      <li>square: {square(value)}</li>
+    <ul style={{ fontSize: 20, textAlign: "left" }}>
       <li>serif italic: {serif(value, { fontStyle: "italic" })}</li>
       <li>serif bold: {serif(value, { fontStyle: "bold" })}</li>
       <li>serif bold-italic: {serif(value, { fontStyle: "bold-italic" })}</li>
@@ -53,6 +52,7 @@ const Demo = () => {
       <li>mono-space: {monoSpace(value)}</li>
       <li>double-struck: {doubleStruck(value)}</li>
       <li>circle: {circle(value)}</li>
+      <li>square: {square(value)}</li>
       <hr />
       <li>script normal: {script(value)}</li>
       <li>script bold: {script(value, { fontStyle: "bold" })}</li>
