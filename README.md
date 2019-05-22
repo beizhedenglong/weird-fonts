@@ -3,13 +3,15 @@
 
 ## 𝑺𝒄𝒓𝒆𝒆𝒏𝒔𝒉𝒐𝒕
 
-![demo](./images/demo.png) 
+<div align="center"><img src="./images/demo.png"></div> 
 
 You can play with this [demo](https://beizhedenglong.github.io/weird-fonts). 
 
 
 ## 𝑰𝒏𝒔𝒕𝒂𝒍𝒍𝒂𝒕𝒊𝒐𝒏
-`npm install weird-fonts --save`  
+```  
+npm install weird-fonts --save  
+```  
 
 ## 𝑼𝒔𝒂𝒈𝒆
 ```js 

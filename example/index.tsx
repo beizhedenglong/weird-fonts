@@ -6,26 +6,40 @@ import {
   script, fraktur, square,
 } from "../src"
 
+const inputStyle = {
+  padding: '0 20px',
+  boxShadow: '0px 1px 8px #20212447',
+  borderRadius: '8px',
+  outline: 'none',
+  border: 'none',
+}
+
 const Demo = () => {
   const [value, setValue] = React.useState("I love you three thousand.")
   return <div
     style={{
       padding: 20,
+      width: 600,
+      margin: '0 auto',
+      textAlign: "center",
     }}
   >
-    <h1>Weird Fonts Demo</h1>
+    <h1 style={{
+      color: '#007fff'
+    }}>𝖂𝖊𝖎𝖗𝖉 𝕱𝖔𝖓𝖙𝖘 𝕯𝖊𝖒𝖔</h1>
     <input
       type="text"
       placeholder="Type here..."
       style={{
         width: 500,
         height: 50,
-        fontSize: 16
+        fontSize: 16,
+        ...inputStyle
       }}
       value={value}
       onChange={e => setValue(e.target.value)}
     />
-    <ul style={{ fontSize: 20 }}>
+    <ul style={{ fontSize: 20, textAlign: "left" }}>
       <li>serif italic: {serif(value, { fontStyle: "italic" })}</li>
       <li>serif bold: {serif(value, { fontStyle: "bold" })}</li>
       <li>serif bold-italic: {serif(value, { fontStyle: "bold-italic" })}</li>

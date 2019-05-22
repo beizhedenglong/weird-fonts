@@ -3,13 +3,15 @@ A JavaScript package that turn alphanumeric characters into weird font style.
 
 ## Screenshot
 
-![demo](./images/demo.png) <!-- weird-disable-line -->
+<div align="center"><img src="./images/demo.png"></div> <!-- weird-disable-line -->
 
 You can play with this [demo](https://beizhedenglong.github.io/weird-fonts). <!-- weird-disable-line -->
 
 
 ## Installation
-`npm install weird-fonts --save`  <!-- weird-disable-line -->
+```  <!-- weird-disable-line -->
+npm install weird-fonts --save  <!-- weird-disable-line -->
+```  
 
 ## Usage
 ```js <!-- weird-disable-line -->
